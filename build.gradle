@@ -13,17 +13,17 @@ buildscript {
         classpath "org.apache.grails:grails-data-hibernate5"
         classpath "cloud.wondrify:asset-pipeline-gradle"
         classpath "org.graalvm.buildtools.native:org.graalvm.buildtools.native.gradle.plugin:1.1.0"
- classpath 'com.gluonhq:gluonfx-gradle-plugin:1.0.29'
+ 
     }
 }
 
 version = "0.1"
 group = "nat"
 apply plugin:"org.springframework.boot"  
-//apply plugin:'org.graalvm.buildtools.native' 
+apply plugin:'org.graalvm.buildtools.native' 
 apply plugin:"eclipse"
 apply plugin:"idea"
- apply plugin: 'com.gluonhq.gluonfx-gradle-plugin'
+ 
 //apply plugin:"war"
 apply plugin:"org.apache.grails.gradle.grails-web"
 apply plugin:"cloud.wondrify.asset-pipeline"
