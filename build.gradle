@@ -21,7 +21,7 @@ version = "0.1"
 group = "nat"
 apply plugin:"org.springframework.boot"  
 apply plugin:'org.graalvm.buildtools.native' 
-applicationDefaultJvmArgs = ["--sun-misc-unsafe-memory-access=allow"]
+//applicationDefaultJvmArgs = ["--sun-misc-unsafe-memory-access=allow"]
 apply plugin:"eclipse"
 apply plugin:"idea"
  
