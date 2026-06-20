@@ -1,0 +1,5 @@
+# SOURCE_DATE_EPOCH = 1781827200
+grails.env=production
+info.app.grailsVersion=8.0.0-M1
+info.app.name=gn
+info.app.version=0.1
