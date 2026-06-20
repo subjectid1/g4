@@ -6,8 +6,8 @@ RUN microdnf install findutils
 WORKDIR /app
 COPY . .
  RUN chmod +x ./gradlew
-# Build your application (or compile a Native Image if desired)  
-RUN ./gradlew nativeCompile -Pstatic
+# Build your application (or compile a Native Image if desired)  -Pstatic
+RUN ./gradlew nativeCompile 
  
  
 # Define the command to run your app
