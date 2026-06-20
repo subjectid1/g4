@@ -4,6 +4,7 @@ buildscript {
         mavenCentral()
         maven {
             url = 'https://repo.grails.org/grails/restricted'
+       url "https://plugins.gradle.org/m2/"
         }
     }
     dependencies {
@@ -12,6 +13,7 @@ buildscript {
         classpath "org.apache.grails:grails-data-hibernate5"
         classpath "cloud.wondrify:asset-pipeline-gradle"
         classpath "org.graalvm.buildtools.native:org.graalvm.buildtools.native.gradle.plugin:1.1.0"
+ classpath 'com.gluonhq:gluonfx-gradle-plugin:1.0.29'
     }
 }
 
@@ -21,8 +23,8 @@ apply plugin:"org.springframework.boot"
 apply plugin:'org.graalvm.buildtools.native' 
 apply plugin:"eclipse"
 apply plugin:"idea"
- 
-apply plugin:"war"
+ apply plugin: 'com.gluonhq.gluonfx-gradle-plugin'
+//apply plugin:"war"
 apply plugin:"org.apache.grails.gradle.grails-web"
 apply plugin:"cloud.wondrify.asset-pipeline"
 apply plugin:"org.apache.grails.gradle.grails-gsp"
