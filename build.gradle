@@ -72,11 +72,9 @@ dependencies {
   //  testImplementation "org.spockframework:spock-core"
  //  testImplementation "org.apache.grails:grails-testing-support-web"
 }
-graalvmNative .withType(JavaForkOptions) {
-    jvmArgs += '--sun-misc-unsafe-memory-access=allow'
-}
-graalvmNative {
  
+graalvmNative {
+     jvmArgs += '--sun-misc-unsafe-memory-access=allow'
     binaries.all {
         // common options
         verbose = true
