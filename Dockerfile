@@ -7,7 +7,8 @@ WORKDIR /app
 COPY . .
  RUN chmod +x ./gradlew
 # Build your application (or compile a Native Image if desired)  -Pstatic
-RUN ./gradlew nativeCompile 
+RUN ./gradlew nativeCompile --no-daemon \
+    -Pmicronaut.native.args="--static --libc=glibc"
  
  
 # Define the command to run your app
